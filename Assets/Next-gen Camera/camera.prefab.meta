@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 09db9ea8cde56844287e21c4c9fddcb0
+timeCreated: 1432127057
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 37365
+  packageName: Next-gen Camera
+  packageVersion: 1.0
+  assetPath: Assets/Next-gen Camera/camera.prefab
+  uploadId: 64518
