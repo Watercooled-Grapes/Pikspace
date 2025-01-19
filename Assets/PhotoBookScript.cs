@@ -14,7 +14,7 @@ public class PhotoBookScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        photo = photoManager.GetComponent<PhotoManagerScript>().getPhoto(0);
+        photo = photoManager.GetComponent<PhotoManagerScript>().getPhoto();
         GetComponent<RawImage>().texture = photo;
     }
 }
