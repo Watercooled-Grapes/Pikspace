@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2866911623862447385}
-  - component: {fileID: 5773525485791383192}
   m_Layer: 0
   m_Name: Photo Book
   m_TagString: Untagged
@@ -34,19 +33,6 @@ Transform:
   - {fileID: 5878628298243259252}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5773525485791383192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2197937414960345813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46b3266faec6e0746b7996c0fea688e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  photoManager: {fileID: 0}
 --- !u!1 &3853400620591881682
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,7 +253,7 @@ GameObject:
   - component: {fileID: 2577174249538963175}
   - component: {fileID: 437544908019174761}
   - component: {fileID: 3715051519692657092}
-  - component: {fileID: 2040091577320514142}
+  - component: {fileID: 7646609604391199392}
   m_Layer: 0
   m_Name: RawImage
   m_TagString: Untagged
@@ -329,7 +315,7 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
---- !u!114 &2040091577320514142
+--- !u!114 &7646609604391199392
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -342,6 +328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   photoManager: {fileID: 0}
+  playerLocation: {fileID: 0}
 --- !u!1 &7733093014707013372
 GameObject:
   m_ObjectHideFlags: 0
