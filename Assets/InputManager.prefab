@@ -92,6 +92,31 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 6586127512898614304, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  bButton:
+    m_UseReference: 0
+    m_Action:
+      m_Name: B Button
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 336f3ec0-173a-4e59-9f7b-b8b90b77b1ed
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  lTrigger:
+    m_UseReference: 0
+    m_Action:
+      m_Name: L Trigger
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: c8985af8-bb03-47d2-92e1-712bfd94d3b1
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
   photoManager: {fileID: 0}
   photoBook: {fileID: 0}
   photoDisplay: {fileID: 0}
+  uiSettings: {fileID: 0}

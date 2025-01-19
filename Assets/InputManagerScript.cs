@@ -9,6 +9,7 @@ public class InputManagerScript : MonoBehaviour
     [SerializeField] private InputActionProperty aButton;
     [SerializeField] private InputActionProperty xButton;
     [SerializeField] private InputActionProperty bButton;
+    [SerializeField] private InputActionProperty lTrigger;
 
     [SerializeField] private GameObject photoManager;
     [SerializeField] private GameObject photoBook;
@@ -16,8 +17,10 @@ public class InputManagerScript : MonoBehaviour
     [SerializeField] private GameObject uiSettings;
 
     private bool readyToPhotograph = true;
+    private bool readyToDelete = true;
     private bool readyToToggleBook = true;
     private bool bookOpen = false;
+    private bool settingsOpen = false;
     private bool readyToFlipL = true;
     private bool readyToFlipR = true;
     private bool settingsToggle = false;
@@ -31,30 +34,44 @@ public class InputManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (bButton.action.ReadValue<float>() != 0)
-        // {
-        //     if (settingsToggle)
-        //     {
-        //         
-        //         settingsToggle = false;
-        //     }
-        //     
-        // }
-        // else
-        // {
-        //     settingsToggle = true;
-        // }
-        
+        if (bButton.action.ReadValue<float>() != 0)
+        {
+            if (settingsToggle)
+            {
+                settingsToggle = false;
+                settingsOpen = !settingsOpen;
+                uiSettings.SetActive(settingsOpen);
+            }
+        }
+        else
+        {
+            settingsToggle = true;
+        }
+
         if (rTrigger.action.ReadValue<float>() != 0)
         {
             if (readyToPhotograph)
             {
-                photoManager.GetComponent<PhotoManagerScript>().takePhoto();
                 readyToPhotograph = false;
+                photoManager.GetComponent<PhotoManagerScript>().takePhoto();
             }
-        } else
+        }
+        else
         {
             readyToPhotograph = true;
+        }
+
+        if (lTrigger.action.ReadValue<float>() != 0)
+        {
+            if (readyToDelete)
+            {
+                readyToDelete = false;
+                photoDisplay.GetComponent<PhotoBookScript>().deletePhoto();
+            }
+        }
+        else
+        {
+            readyToDelete = true;
         }
 
         if (yButton.action.ReadValue<float>() != 0)
@@ -75,8 +92,8 @@ public class InputManagerScript : MonoBehaviour
         {
             if (readyToFlipL)
             {
-                photoDisplay.GetComponent<PhotoBookScript>().prevPhoto();
                 readyToFlipL = false;
+                photoDisplay.GetComponent<PhotoBookScript>().prevPhoto();
             }
         }
         else
@@ -88,8 +105,8 @@ public class InputManagerScript : MonoBehaviour
         {
             if (readyToFlipR)
             {
-                photoDisplay.GetComponent<PhotoBookScript>().nextPhoto();
                 readyToFlipR = false;
+                photoDisplay.GetComponent<PhotoBookScript>().nextPhoto();
             }
         }
         else
