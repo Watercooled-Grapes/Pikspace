@@ -39,8 +39,8 @@ public class CameraSettings : MonoBehaviour
 
         // APERTURE: change depth of field (ACTUAL RANGE: 0 - 1)
         cam.aperture = aperture;
-        focus.focusDistance.value = focalDistance;
-
+        cam.focusDistance = focalDistance;
+        
         // SHUTTER SPEED: change motion blur (ACTUAL RANGE: 1 - 100)
         cam.shutterSpeed = shutterSpeed;
         blur.intensity.value = (float)(this.shutterSpeed * 100 / 22.2f);
