@@ -44,30 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31dae8996736fa1489ed9f23fddeffe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xButton:
-    m_UseReference: 1
-    m_Action:
-      m_Name: X Button
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 4a02150d-44c4-494e-ae7e-9e3ef54e30ba
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 6586127512898614304, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  rTrigger:
-    m_UseReference: 1
-    m_Action:
-      m_Name: R Trigger
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 786f415f-822f-4adb-bf78-617bcca907a6
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -3719528976015152429, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   yButton:
     m_UseReference: 1
     m_Action:
@@ -80,18 +56,67 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 6829052936721573954, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  bButton:
+  rTrigger:
     m_UseReference: 1
     m_Action:
-      m_Name: B Button
+      m_Name: R Trigger
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 3e73a781-5fa4-4b13-a6b7-69bac30a53ad
+      m_Id: 786f415f-822f-4adb-bf78-617bcca907a6
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 467692209829049189, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_Reference: {fileID: -3719528976015152429, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  aButton:
+    m_UseReference: 0
+    m_Action:
+      m_Name: A Button
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 8dcf2f87-7629-42c7-8466-65fb009bdd4a
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  xButton:
+    m_UseReference: 1
+    m_Action:
+      m_Name: X Button
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 4a02150d-44c4-494e-ae7e-9e3ef54e30ba
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 6586127512898614304, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  bButton:
+    m_UseReference: 0
+    m_Action:
+      m_Name: B Button
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 336f3ec0-173a-4e59-9f7b-b8b90b77b1ed
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  lTrigger:
+    m_UseReference: 0
+    m_Action:
+      m_Name: L Trigger
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: c8985af8-bb03-47d2-92e1-712bfd94d3b1
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
   photoManager: {fileID: 0}
   photoBook: {fileID: 0}
   photoDisplay: {fileID: 0}
+  uiSettings: {fileID: 0}
