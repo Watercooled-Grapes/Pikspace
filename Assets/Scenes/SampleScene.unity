@@ -7893,8 +7893,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3673368945797645213, guid: 09db9ea8cde56844287e21c4c9fddcb0, type: 3}
+      propertyPath: aperture
+      value: 2.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673368945797645213, guid: 09db9ea8cde56844287e21c4c9fddcb0, type: 3}
       propertyPath: shutterSpeed
-      value: 0.104
+      value: 0.00025
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673368945797645213, guid: 09db9ea8cde56844287e21c4c9fddcb0, type: 3}
+      propertyPath: focalDistance
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8197885885900650373, guid: 09db9ea8cde56844287e21c4c9fddcb0, type: 3}
       propertyPath: weight
