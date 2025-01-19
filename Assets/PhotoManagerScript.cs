@@ -38,7 +38,7 @@ void Start()
 
     public RenderTexture getPhoto(int index)
     {
-        if (index < 0 || index >= getSize())
+        if (!photoData.Any() || index < 0 || index >= getSize())
         {
             return null;
         }
@@ -53,5 +53,10 @@ void Start()
         Graphics.CopyTexture(handheldCamera.targetTexture, photoTexture);
         addPhoto(photoTexture);
         photoDisplay.GetComponent<PhotoBookScript>().nextPhoto();
+    }
+
+    public void removePhoto(int index)
+    {
+        photoData.RemoveAt(index);
     }
 }

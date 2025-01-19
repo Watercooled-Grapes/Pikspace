@@ -21,18 +21,27 @@ public class PhotoBookScript : MonoBehaviour
 
     public void updatePhoto()
     {
+        GetComponent<RawImage>().color = new Color(1f, 1f, 1f, 1f);
         photo = photoManagerScript.getPhoto(idx);
         GetComponent<RawImage>().texture = photo;
     }
 
     public void nextPhoto()
     {
+        if (photoManagerScript.getSize() == 0)
+        {
+            return;
+        }
         idx = Mathf.Min(photoManagerScript.getSize() - 1, idx + 1);
         updatePhoto();
     }
 
     public void prevPhoto()
     {
+        if (photoManagerScript.getPhoto(idx) == null)
+        {
+            return;
+        }
         idx = Mathf.Max(0, idx - 1);
         updatePhoto();
     }
@@ -40,6 +49,16 @@ public class PhotoBookScript : MonoBehaviour
     public void resetPhoto()
     {
         idx = photoManagerScript.getSize();
+        updatePhoto();
+    }
+
+    public void deletePhoto()
+    {
+        photoManagerScript.removePhoto(idx);
+        if (idx >= photoManagerScript.getSize())
+        {
+            idx = photoManagerScript.getSize() - 1;
+        }
         updatePhoto();
     }
 }
