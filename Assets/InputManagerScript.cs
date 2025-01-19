@@ -8,16 +8,19 @@ public class InputManagerScript : MonoBehaviour
     [SerializeField] private InputActionProperty rTrigger;
     [SerializeField] private InputActionProperty aButton;
     [SerializeField] private InputActionProperty xButton;
+    [SerializeField] private InputActionProperty bButton;
 
     [SerializeField] private GameObject photoManager;
     [SerializeField] private GameObject photoBook;
     [SerializeField] private GameObject photoDisplay;
+    [SerializeField] private GameObject uiSettings;
 
     private bool readyToPhotograph = true;
     private bool readyToToggleBook = true;
     private bool bookOpen = false;
     private bool readyToFlipL = true;
     private bool readyToFlipR = true;
+    private bool settingsToggle = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,6 +31,20 @@ public class InputManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // if (bButton.action.ReadValue<float>() != 0)
+        // {
+        //     if (settingsToggle)
+        //     {
+        //         
+        //         settingsToggle = false;
+        //     }
+        //     
+        // }
+        // else
+        // {
+        //     settingsToggle = true;
+        // }
+        
         if (rTrigger.action.ReadValue<float>() != 0)
         {
             if (readyToPhotograph)
