@@ -18,7 +18,7 @@ MonoBehaviour:
     m_Value: 2
   intensity:
     m_OverrideState: 1
-    m_Value: 5.78
+    m_Value: 4.504504
   maximumVelocity:
     m_OverrideState: 1
     m_Value: 200
@@ -265,7 +265,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.468
+    m_Value: 0.336
   smoothness:
     m_OverrideState: 0
     m_Value: 0.2
@@ -348,7 +348,7 @@ MonoBehaviour:
     m_Value: 1
   focusDistance:
     m_OverrideState: 1
-    m_Value: 2.57
+    m_Value: 0.1
   focusDistanceMode:
     m_OverrideState: 1
     m_Value: 1
