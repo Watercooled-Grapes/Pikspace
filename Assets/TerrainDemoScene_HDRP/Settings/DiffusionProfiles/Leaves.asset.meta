@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1d64e941d8b9bf54c83f45e14c4a4df0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity Terrain - HDRP Demo Scene
+  packageVersion: 1.0.2
+  assetPath: Assets/TerrainDemoScene_HDRP/Settings/DiffusionProfiles/Leaves.asset
+  uploadId: 531742
