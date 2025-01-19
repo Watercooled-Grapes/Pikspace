@@ -27,7 +27,7 @@ public class CameraSettings : MonoBehaviour
     }
 
     // Update is called once per frame
-    void OnValidate()
+    void Update()
     {
         // ZOOM: adjust focal range
         cam.focalLength = 30 * this.zoom;
