@@ -1,13 +1,12 @@
-using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.InputSystem.XR;
-using UnityEngine.XR;
 
 public class PhotoManagerScript : MonoBehaviour
 {
-    private Stack<RenderTexture> photoData;
+    private List<RenderTexture> photoData;
+    [SerializeField] private GameObject photoDisplay;
     [SerializeField] private Camera handheldCamera;
     bool triggerValue;
 
@@ -15,28 +14,33 @@ public class PhotoManagerScript : MonoBehaviour
 // Start is called once before the first execution of Update after the MonoBehaviour is created
 void Start()
     {
-        photoData = new Stack<RenderTexture>();
-        takePhoto();
+        photoData = new List<RenderTexture>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(getSize());
+    }
+
+    public int getSize()
+    {
+        return photoData.Count;
     }
 
     public void addPhoto(RenderTexture photo)
     {
-        photoData.Push(photo);
+        photoData.Add(photo);
     }
 
     public RenderTexture getPhoto()
     {
-        return photoData.Peek();
+        return photoData.ElementAt(getSize());
     }
 
     public RenderTexture getPhoto(int index)
     {
-        if (index < 0 || index >= photoData.Count)
+        if (index < 0 || index >= getSize())
         {
             return null;
         }
@@ -50,17 +54,6 @@ void Start()
         handheldCamera.Render();
         Graphics.CopyTexture(handheldCamera.targetTexture, photoTexture);
         addPhoto(photoTexture);
-        Debug.Log("what");
-        //Texture2D tex = new Texture2D(cameraTexture.width, cameraTexture.height, TextureFormat.ARGB32, false, false);
-        //var oldRt = RenderTexture.active;
-        //RenderTexture.active = cameraTexture;
-        //tex.ReadPixels(new Rect(0, 0, cameraTexture.width, cameraTexture.height), 0, 0);
-        //tex.Apply();
-        //addPhoto(tex.GetPixels());
-        //RenderTexture.active = oldRt;
-        //if (Application.isPlaying)
-        //    Object.Destroy(tex);
-        //else
-        //    Object.DestroyImmediate(tex);
+        photoDisplay.GetComponent<PhotoBookScript>().nextPhoto();
     }
 }
