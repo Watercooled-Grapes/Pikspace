@@ -18,7 +18,7 @@ MonoBehaviour:
     m_Value: 2
   intensity:
     m_OverrideState: 1
-    m_Value: 135.13513
+    m_Value: 5.78
   maximumVelocity:
     m_OverrideState: 1
     m_Value: 200
@@ -64,7 +64,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.00625
+    m_Value: 0.025
   response:
     m_OverrideState: 1
     m_Value: 0.8
@@ -310,7 +310,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   dirtTexture:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {fileID: 0}
   dirtIntensity:
     m_OverrideState: 0
@@ -342,16 +342,16 @@ MonoBehaviour:
   active: 1
   quality:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 3
   focusMode:
     m_OverrideState: 1
     m_Value: 1
   focusDistance:
     m_OverrideState: 1
-    m_Value: 0.5855856
+    m_Value: 2.57
   focusDistanceMode:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
   nearFocusStart:
     m_OverrideState: 1
     m_Value: 0
@@ -383,10 +383,10 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   m_PhysicallyBased:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   m_AdaptiveSamplingWeight:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.75
   m_LimitManualRangeNearBlur:
     m_OverrideState: 1
