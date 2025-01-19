@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 65bbb4ac547101c4cb9f7f4d2ab56b41
+timeCreated: 1432118208
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 37365
+  packageName: Next-gen Camera
+  packageVersion: 1.0
+  assetPath: Assets/Next-gen Camera/Materials/Screen_glass.mat
+  uploadId: 64518
