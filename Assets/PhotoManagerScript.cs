@@ -8,7 +8,6 @@ public class PhotoManagerScript : MonoBehaviour
     private List<RenderTexture> photoData;
     [SerializeField] private GameObject photoDisplay;
     [SerializeField] private Camera handheldCamera;
-    bool triggerValue;
 
 
 // Start is called once before the first execution of Update after the MonoBehaviour is created

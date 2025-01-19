@@ -44,7 +44,6 @@ public class InputManagerScript : MonoBehaviour
         {
             if (readyToToggleBook)
             {
-                photoManager.GetComponent<PhotoManagerScript>().takePhoto();
                 readyToToggleBook = false;
                 bookOpen = !bookOpen;
                 photoBook.SetActive(bookOpen);
