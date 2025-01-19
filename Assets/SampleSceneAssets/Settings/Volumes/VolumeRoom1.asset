@@ -37,6 +37,15 @@ MonoBehaviour:
   occlusionOnlyReflectionNormalization:
     m_OverrideState: 0
     m_Value: 1
+  intensityMultiplier:
+    m_OverrideState: 0
+    m_Value: 1
+  skyOcclusionIntensityMultiplier:
+    m_OverrideState: 0
+    m_Value: 1
+  worldOffset:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d877a03bef431a847adca8ab343db3e1, type: 3}
   m_Name: RayTracingSettings
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   rayBias:
     m_OverrideState: 0
     m_Value: 0.001
@@ -245,6 +254,9 @@ MonoBehaviour:
   cullingDistance:
     m_OverrideState: 0
     m_Value: 1000
+  minSolidAngle:
+    m_OverrideState: 0
+    m_Value: 4
 --- !u!114 &8896021737368581315
 MonoBehaviour:
   m_ObjectHideFlags: 3
