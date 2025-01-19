@@ -3,6 +3,7 @@ using UnityEngine;
 public class PhotoBookLocationScript : MonoBehaviour
 {
     [SerializeField] private Transform playerLocation;
+    [SerializeField] private GameObject photoBook;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,5 +21,6 @@ public class PhotoBookLocationScript : MonoBehaviour
     {
         transform.position = playerLocation.position;
         transform.rotation = playerLocation.rotation;
+        photoBook.GetComponent<PhotoBookScript>().resetPhoto();
     }
 }

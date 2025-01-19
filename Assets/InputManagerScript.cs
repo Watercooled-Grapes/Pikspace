@@ -50,7 +50,7 @@ public class InputManagerScript : MonoBehaviour
 
         if (rTrigger.action.ReadValue<float>() != 0)
         {
-            if (readyToPhotograph)
+            if (readyToPhotograph && !settingsOpen)
             {
                 readyToPhotograph = false;
                 photoManager.GetComponent<PhotoManagerScript>().takePhoto();
@@ -63,7 +63,7 @@ public class InputManagerScript : MonoBehaviour
 
         if (lTrigger.action.ReadValue<float>() != 0)
         {
-            if (readyToDelete)
+            if (readyToDelete && !settingsOpen)
             {
                 readyToDelete = false;
                 photoDisplay.GetComponent<PhotoBookScript>().deletePhoto();

@@ -28,7 +28,7 @@ public class PhotoBookScript : MonoBehaviour
 
     public void nextPhoto()
     {
-        if (photoManagerScript.getSize() == 0)
+        if (photoManagerScript.getPhoto(idx) == null)
         {
             return;
         }
@@ -48,7 +48,7 @@ public class PhotoBookScript : MonoBehaviour
 
     public void resetPhoto()
     {
-        idx = photoManagerScript.getSize();
+        idx = photoManagerScript.getSize() - 1;
         updatePhoto();
     }
 
