@@ -1422,6 +1422,17 @@
                 },
                 {
                     "name": "",
+                    "id": "62c2457d-1889-4f9c-b466-cf56a76fcdc7",
+                    "path": "<XRInputV1::Oculus::MetaQuestTouchPlusControllerOpenXR>{LeftHand}/triggerpressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LTrigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "76842c51-a9e0-4621-af93-6da0a7d728e2",
                     "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{LeftHand}/grippressed",
                     "interactions": "",
@@ -2664,6 +2675,17 @@
                     "name": "",
                     "id": "a8a27545-5dab-48f3-b7ae-6f621d511739",
                     "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{RightHand}/secondarybutton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "B",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "46f8f41d-94e8-4d2c-a8f3-ffeb9b093316",
+                    "path": "<XRInputV1::Oculus::MetaQuestTouchPlusControllerOpenXR>{RightHand}/secondarybutton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
