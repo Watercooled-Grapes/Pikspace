@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9a6c6a82da7004b46907975beef4de3a
+timeCreated: 1432117941
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 37365
+  packageName: Next-gen Camera
+  packageVersion: 1.0
+  assetPath: Assets/Next-gen Camera/Materials/Screen.mat
+  uploadId: 64518

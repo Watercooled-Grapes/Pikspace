@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b55ff6f37a2c01a47aef3e7b492a8277
+timeCreated: 1432126974
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 37365
+  packageName: Next-gen Camera
+  packageVersion: 1.0
+  assetPath: Assets/Next-gen Camera/Textures/Render Texture.renderTexture
+  uploadId: 64518
