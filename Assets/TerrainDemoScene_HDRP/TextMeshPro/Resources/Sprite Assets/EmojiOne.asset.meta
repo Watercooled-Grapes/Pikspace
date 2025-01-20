@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 31ddb15bd11a75747b403cbc368a44b5
+timeCreated: 1480316912
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity Terrain - HDRP Demo Scene
+  packageVersion: 1.0.2
+  assetPath: Assets/TerrainDemoScene_HDRP/TextMeshPro/Resources/Sprite Assets/EmojiOne.asset
+  uploadId: 531742

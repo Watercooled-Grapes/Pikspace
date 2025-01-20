@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 55bebcd5d615c9947b93dc19f9594f6c
+timeCreated: 1436653997
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity Terrain - HDRP Demo Scene
+  packageVersion: 1.0.2
+  assetPath: Assets/TerrainDemoScene_HDRP/TextMeshPro/Resources/TMP Settings.asset
+  uploadId: 531742

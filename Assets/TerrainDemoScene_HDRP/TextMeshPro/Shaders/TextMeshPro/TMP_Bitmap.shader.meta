@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 145f39af4510b7840b31aa290ef563dc
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity Terrain - HDRP Demo Scene
+  packageVersion: 1.0.2
+  assetPath: Assets/TerrainDemoScene_HDRP/TextMeshPro/Shaders/TextMeshPro/TMP_Bitmap.shader
+  uploadId: 531742

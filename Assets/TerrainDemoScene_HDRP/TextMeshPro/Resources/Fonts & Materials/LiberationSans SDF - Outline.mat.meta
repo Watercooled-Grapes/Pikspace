@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f06e10f1bc035ed438322e942ce77abf
+timeCreated: 1484172856
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity Terrain - HDRP Demo Scene
+  packageVersion: 1.0.2
+  assetPath: Assets/TerrainDemoScene_HDRP/TextMeshPro/Resources/Fonts & Materials/LiberationSans
+    SDF - Outline.mat
+  uploadId: 531742

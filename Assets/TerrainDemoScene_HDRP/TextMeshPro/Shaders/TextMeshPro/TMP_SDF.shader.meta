@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 029510c8466cbc743a61d476c0680d02
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity Terrain - HDRP Demo Scene
+  packageVersion: 1.0.2
+  assetPath: Assets/TerrainDemoScene_HDRP/TextMeshPro/Shaders/TextMeshPro/TMP_SDF.shader
+  uploadId: 531742
