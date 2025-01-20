@@ -95,8 +95,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 453522}
-  - component: {fileID: 5234251416920313857}
-  - component: {fileID: 1922802952889816598}
+  - component: {fileID: 4163676407189395019}
+  - component: {fileID: 5442565030816624699}
   m_Layer: 0
   m_Name: camera
   m_TagString: Untagged
@@ -123,7 +123,7 @@ Transform:
   - {fileID: 447368}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &5234251416920313857
+--- !u!54 &4163676407189395019
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,7 +150,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1922802952889816598
+--- !u!114 &5442565030816624699
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,12 +163,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
-  m_Colliders: []
+  m_Colliders:
+  - {fileID: 598528132781493770}
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 4294967295
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
-  m_FocusMode: 1
+  m_FocusMode: 0
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
   m_AllowGazeSelect: 0
@@ -738,7 +739,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e972f40211aa86f4bb7af854bfc7b3ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoom: 1
-  iso: 400
+  zoom: 1.29
+  iso: 60
   aperture: 1.8
-  shutterSpeed: 1
+  shutterSpeed: 0.0020647508
+  focalDistance: 38.9332

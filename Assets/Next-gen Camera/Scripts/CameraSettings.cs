@@ -5,17 +5,14 @@ using UnityEngine.Rendering.HighDefinition;
 
 public class CameraSettings : MonoBehaviour
 {
-    [Range(1, 8)] public float zoom = 0.25f;
-    [Range(60, 16000)] public int iso = 400;
     [Range(1.8f, 24f)] public float aperture = 2.4f;
     [Range(0.00025f, 1f)] public float shutterSpeed = 1f;
-    [Range(0.25f, 1000f)] public float focalDistance = 0.25f;
     private Volume volume;
     private VolumeProfile effects;
-    private Camera cam;
-    private FilmGrain grain;
+    public static Camera cam;
+    public static FilmGrain grain;
     private DepthOfField focus;
-    private MotionBlur blur;
+    public static MotionBlur blur;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -26,23 +23,35 @@ public class CameraSettings : MonoBehaviour
         effects.TryGet<DepthOfField>(out focus);
         effects.TryGet<MotionBlur>(out blur);
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    public static void updateZoom(float val)
     {
         // ZOOM: adjust focal range
-        cam.focalLength = 30 * this.zoom;
-
+        cam.focalLength = 30 * val;
+    }
+    
+    public static void updateIso(float val)
+    {
         // ISO: change camera brightness and apply grain (ACTUAL RANGE: 1000 - 10000)
-        cam.iso = iso;
-        grain.intensity.value = (float)iso;
-
+        cam.iso = (int)val;
+        grain.intensity.value = val;
+    }
+    
+    public static void updateAperature(float val)
+    {
         // APERTURE: change depth of field (ACTUAL RANGE: 0 - 1)
-        cam.aperture = aperture;
-        cam.focusDistance = focalDistance;
-        
+        cam.aperture = val;
+    }
+    
+    public static void updateFocus(float val)
+    {
+        cam.focusDistance = val;
+    }
+
+    public static void updateShutter(float val)
+    {
         // SHUTTER SPEED: change motion blur (ACTUAL RANGE: 1 - 100)
-        cam.shutterSpeed = shutterSpeed;
-        blur.intensity.value = (float)(this.shutterSpeed * 100 / 22.2f);
+        cam.shutterSpeed = val;
+        blur.intensity.value = (float)(val * 100 / 22.2f);
     }
 }

@@ -11,7 +11,7 @@ public class PhotoManagerScript : MonoBehaviour
 
 
 // Start is called once before the first execution of Update after the MonoBehaviour is created
-void Start()
+    void Start()
     {
         photoData = new List<RenderTexture>();
     }
@@ -38,11 +38,6 @@ void Start()
 
     public RenderTexture getPhoto(int index)
     {
-        if (!photoData.Any() || index < 0 || index >= getSize())
-        {
-            return null;
-        }
-
         return photoData.ElementAt(index);
     }
 
@@ -52,7 +47,7 @@ void Start()
         handheldCamera.Render();
         Graphics.CopyTexture(handheldCamera.targetTexture, photoTexture);
         addPhoto(photoTexture);
-        photoDisplay.GetComponent<PhotoBookScript>().nextPhoto();
+        photoDisplay.GetComponent<PhotoBookScript>().resetPhoto();
     }
 
     public void removePhoto(int index)

@@ -23,7 +23,7 @@ public class InputManagerScript : MonoBehaviour
     private bool settingsOpen = false;
     private bool readyToFlipL = true;
     private bool readyToFlipR = true;
-    private bool settingsToggle = false;
+    private bool settingsToggle = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

@@ -28,26 +28,22 @@ public class PhotoBookScript : MonoBehaviour
 
     public void nextPhoto()
     {
-        if (photoManagerScript.getPhoto(idx) == null)
-        {
-            return;
-        }
         idx = Mathf.Min(photoManagerScript.getSize() - 1, idx + 1);
         updatePhoto();
     }
 
     public void prevPhoto()
     {
-        if (photoManagerScript.getPhoto(idx) == null)
-        {
-            return;
-        }
         idx = Mathf.Max(0, idx - 1);
         updatePhoto();
     }
 
     public void resetPhoto()
     {
+        if (photoManagerScript.getPhoto(idx) == null)
+        {
+            return;
+        }
         idx = photoManagerScript.getSize() - 1;
         updatePhoto();
     }
